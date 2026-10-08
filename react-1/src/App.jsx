@@ -1,22 +1,16 @@
-import { useState } from "react";
-import "./App.css";
+import UseEffectExample from "./components/UseEffectExample";
+import UseStateExample from "./components/UseStateExample";
+import HomePage from "./pages/HomePage";
+
 const App = () => {
-  let [count, setCount] = useState(0);
 
   return (
-    <div>
-      <h1>count is {count}</h1>
-      <h1>this will remain the same</h1>
-      <button onClick={
-        
-        () => {
-        setCount(++count)
-        }
-      
-      
-      }>increse</button>
-    </div>
+    // Fragment
+    <>
+      {/* <HomePage /> */}
+      {/* <UseStateExample /> */}
+      <UseEffectExample />
+    </>
   );
-};
-
-export default App;
+}
+export default App
